@@ -1,0 +1,31 @@
+﻿Build started 10/11/2015 9:11:07 PM.
+     1>Project "C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Morque++\Morque++.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Morque++.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MapPrototypeFactory.cpp Morque.cpp RegularRoom.cpp
+         RegularRoom.cpp
+         Morque.cpp
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2): error C2011: 'Room' : 'class' type redefinition
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3): error C2011: 'RegularRoom' : 'class' type redefinition
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3) : see declaration of 'RegularRoom'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\morque.cpp(18): error C2027: use of undefined type 'RegularRoom'
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3) : see declaration of 'RegularRoom'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\morque.cpp(18): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
+                 type is 'int'
+         MapPrototypeFactory.cpp
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2): error C2011: 'Room' : 'class' type redefinition
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(4): error C2504: 'Room' : base class undefined
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(7): error C2011: 'ROOM_TYPE' : 'enum' type redefinition
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.h(5) : see declaration of 'ROOM_TYPE'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(35): error C2027: use of undefined type 'Room'
+                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
+     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(35): error C2227: left of '->clone' must point to class/struct/union/generic type
+         Generating Code...
+     1>Done Building Project "C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Morque++\Morque++.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.82
