@@ -1,21 +1,23 @@
 #include "RegularRoom.h"
-#include <iostream>
-#include <string>
 
 #define WALL 0
 #define DOOR 1
 
+using namespace std;
 
 RegularRoom::RegularRoom(int pID, int* pAdjacencyList) : Room()
 {
 	mID = pID;
+	mAdjacencyList = new int[4];
 	setAdjacencyList(pAdjacencyList);
+	cout << "created Regular Room " << mID << endl;
 }
 
 RegularRoom::RegularRoom(const RegularRoom& pRegularRoom) : Room(pRegularRoom)
 {
-	mID = pRegularRoom.mID;
+	mID = pRegularRoom.mID + 1;
 	mAdjacencyList = pRegularRoom.mAdjacencyList;
+	cout << "copied Regular Room " << mID << endl;
 }
 
 void RegularRoom::setAdjacencyList(int* pAdjacencyList)
@@ -40,6 +42,7 @@ void RegularRoom::setAdjacencyList(int* pAdjacencyList)
 			else
 			{
 				//error log
+				mAdjacencyList[index] = -1;
 			}
 		}
 	}
@@ -52,5 +55,12 @@ Room* RegularRoom::clone()
 
 void RegularRoom::print()
 {
-	std::cout << "hello world" << std::endl;
+	// print instance info
+	cout << "created Regular Room " << mID << endl;
+	cout << "adjacency list: [";
+	for(int index = 0; index < 4; index++)
+	{
+		cout << mAdjacencyList[index] << ", ";
+	}
+	cout << "]" << endl;
 }

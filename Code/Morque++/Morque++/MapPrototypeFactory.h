@@ -1,16 +1,21 @@
+#pragma once
+#include <map>
+#include <string>
 #include "Room.h"
 #include "RegularRoom.h"
-#include <string>
+#include "PuzzleRoom.h"
 
-enum ROOM_TYPE{ REGULAR, PUZZLE, TRAP };
+using namespace std;
 
 class MapPrototypeFactory
 {
 public:
-	MapPrototypeFactory(std::string, int*);
-	virtual Room* makeRoom(ROOM_TYPE);
-
+	MapPrototypeFactory();
+	MapPrototypeFactory(Room*);
+	~MapPrototypeFactory();
+	virtual Room* makeRoom();
+	virtual Room* getRoom();
 private:
-	Room* _prototypeRoom;
+	Room* mPrototypeRoom;
 };
 

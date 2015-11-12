@@ -60,14 +60,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MapPrototypeFactory.h" />
     <ClInclude Include="Morque.h" />
+    <ClInclude Include="PuzzleRoom.h" />
     <ClInclude Include="RegularRoom.h" />
     <ClInclude Include="Room.h" />
-    <ClInclude Include="MapPrototypeFactory.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Morque.cpp" />
     <ClCompile Include="MapPrototypeFactory.cpp" />
+    <ClCompile Include="Morque.cpp" />
+    <ClCompile Include="PuzzleRoom.cpp" />
     <ClCompile Include="RegularRoom.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

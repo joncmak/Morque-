@@ -18,24 +18,30 @@
     <ClInclude Include="Room.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MapPrototypeFactory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Morque.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RegularRoom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MapPrototypeFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PuzzleRoom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MapPrototypeFactory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Morque.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RegularRoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapPrototypeFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PuzzleRoom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

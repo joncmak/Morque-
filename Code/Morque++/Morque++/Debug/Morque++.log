@@ -1,31 +1,26 @@
-﻿Build started 10/11/2015 9:11:07 PM.
+﻿Build started 12/11/2015 2:38:43 AM.
      1>Project "C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Morque++\Morque++.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\Morque++.unsuccessfulbuild".
+         Creating "Debug\Morque++.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MapPrototypeFactory.cpp Morque.cpp RegularRoom.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt PuzzleRoom.cpp RegularRoom.cpp
          RegularRoom.cpp
-         Morque.cpp
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2): error C2011: 'Room' : 'class' type redefinition
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3): error C2011: 'RegularRoom' : 'class' type redefinition
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3) : see declaration of 'RegularRoom'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\morque.cpp(18): error C2027: use of undefined type 'RegularRoom'
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(3) : see declaration of 'RegularRoom'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\morque.cpp(18): error C2227: left of '->{ctor}' must point to class/struct/union/generic type
-                 type is 'int'
-         MapPrototypeFactory.cpp
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2): error C2011: 'Room' : 'class' type redefinition
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\regularroom.h(4): error C2504: 'Room' : base class undefined
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(7): error C2011: 'ROOM_TYPE' : 'enum' type redefinition
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.h(5) : see declaration of 'ROOM_TYPE'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(35): error C2027: use of undefined type 'Room'
-                 c:\users\jonathan\documents\github\morque-\code\morque++\morque++\room.h(2) : see declaration of 'Room'
-     1>c:\users\jonathan\documents\github\morque-\code\morque++\morque++\mapprototypefactory.cpp(35): error C2227: left of '->clone' must point to class/struct/union/generic type
+         PuzzleRoom.cpp
          Generating Code...
-     1>Done Building Project "C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Morque++\Morque++.vcxproj" (build target(s)) -- FAILED.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Morque++.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.lib" /MACHINE:X86 Debug\MapPrototypeFactory.obj
+         Debug\Morque.obj
+         Debug\PuzzleRoom.obj
+         Debug\RegularRoom.obj
+         LINK : C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.exe not found or not built by the last incremental link; performing full link
+         Morque++.vcxproj -> C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Debug\Morque++.exe;#1" /manifest Debug\Morque++.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Morque++.unsuccessfulbuild".
+         Touching "Debug\Morque++.lastbuildstate".
+     1>Done Building Project "C:\Users\Jonathan\Documents\GitHub\Morque-\Code\Morque++\Morque++\Morque++.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.82
+Time Elapsed 00:00:03.55
