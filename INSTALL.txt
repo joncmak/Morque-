@@ -1,0 +1,4 @@
+Use Visual Studio
+May need to also install BOOST C++
+
+Run vs solution file and debug/release
