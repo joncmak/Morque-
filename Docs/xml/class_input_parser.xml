@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_input_parser" kind="class" language="C++" prot="public">
+    <compoundname>InputParser</compoundname>
+    <includes refid="_input_parser_8h" local="no">InputParser.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_input_parser_1a9e2e24cbf89184dd4fa72a74fb89773a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InputParser::InputParser</definition>
+        <argsstring>()</argsstring>
+        <name>InputParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="25" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_parser_1a75fe4bac3901a5165eaef2f4acb1704b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InputParser::~InputParser</definition>
+        <argsstring>()</argsstring>
+        <name>~InputParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputParser::getCommand</definition>
+        <argsstring>()</argsstring>
+        <name>getCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" kindref="member">getCommand()</ref></para><para>Gathers user input and parses commands. Valid actons are create, print, and quit. After creating an instance, it will prompt to save. todo store multiple instances, print will print info on all instances </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="27" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp" bodystart="89" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_parser_1af7a64c3eeac796698f5e9028d11087e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputParser::loadSaveFile</definition>
+        <argsstring>()</argsstring>
+        <name>loadSaveFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_input_parser_1af7a64c3eeac796698f5e9028d11087e6" kindref="member">loadSaveFile()</ref></para><para>If a save file is present, it loads the instance from savefile. Currently only returns uuid for the instance. Uses Boost library for serialization. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="28" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp" bodystart="70" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_input_parser_1acadb5b800901de816250660c705ab645" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string InputParser::getClassName</definition>
+        <argsstring>()</argsstring>
+        <name>getClassName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getClassName</para><para>Gathers user input for a class name. Validates classroom name. If invalid, return empty string</para><para>Returns: name of the class to create. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="31" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_parser_1ab513c433d2cb2d24c5ce7c9ec5a91a2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int * InputParser::getAdjList</definition>
+        <argsstring>()</argsstring>
+        <name>getAdjList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getAdjList()</para><para>Gather user input for an adjacency list. Specifies which sides of the room are walls/doors.</para><para>Returns: integer array for adjacency list </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="32" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp" bodystart="31" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_input_parser_1ace4382dd8d91a43f36649fd42783d829" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string InputParser::genID</definition>
+        <argsstring>()</argsstring>
+        <name>genID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getID()</para><para>Generates a uuid and casts to string. Uses Boost::uuid library</para><para>Return: uuid string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="33" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Input Command Parser</para><para>Parses user input. Gathers user input using cin. Auto-generates uuid for insteance IDs. Loads <ref refid="class_room" kindref="compound">Room</ref> instance if savefile is present. Requires Boost C++ Library </para>    </detaileddescription>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" line="23" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h" bodystart="22" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_input_parser_1ace4382dd8d91a43f36649fd42783d829" prot="private" virt="non-virtual"><scope>InputParser</scope><name>genID</name></member>
+      <member refid="class_input_parser_1ab513c433d2cb2d24c5ce7c9ec5a91a2c" prot="private" virt="non-virtual"><scope>InputParser</scope><name>getAdjList</name></member>
+      <member refid="class_input_parser_1acadb5b800901de816250660c705ab645" prot="private" virt="non-virtual"><scope>InputParser</scope><name>getClassName</name></member>
+      <member refid="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" prot="public" virt="non-virtual"><scope>InputParser</scope><name>getCommand</name></member>
+      <member refid="class_input_parser_1a9e2e24cbf89184dd4fa72a74fb89773a" prot="public" virt="non-virtual"><scope>InputParser</scope><name>InputParser</name></member>
+      <member refid="class_input_parser_1af7a64c3eeac796698f5e9028d11087e6" prot="public" virt="non-virtual"><scope>InputParser</scope><name>loadSaveFile</name></member>
+      <member refid="class_input_parser_1a75fe4bac3901a5165eaef2f4acb1704b" prot="public" virt="non-virtual"><scope>InputParser</scope><name>~InputParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

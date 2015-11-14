@@ -11,6 +11,14 @@
 
 #include "MapPrototypeFactory.h"
 
+///
+/// Input Command Parser
+/// 
+/// Parses user input. Gathers user input using cin.
+/// Auto-generates uuid for insteance IDs.
+/// Loads Room instance if savefile is present.
+/// Requires Boost C++ Library
+///
 class InputParser
 {
 public:

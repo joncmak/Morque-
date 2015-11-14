@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_5e38441d0ab09871344913f05064f702" kind="dir">
+    <compoundname>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++</compoundname>
+    <innerfile refid="_input_parser_8cpp">InputParser.cpp</innerfile>
+    <innerfile refid="_input_parser_8h">InputParser.h</innerfile>
+    <innerfile refid="maintest_8cpp">maintest.cpp</innerfile>
+    <innerfile refid="_map_prototype_factory_8cpp">MapPrototypeFactory.cpp</innerfile>
+    <innerfile refid="_map_prototype_factory_8h">MapPrototypeFactory.h</innerfile>
+    <innerfile refid="_orque_8cpp">Orque.cpp</innerfile>
+    <innerfile refid="_puzzle_room_8cpp">PuzzleRoom.cpp</innerfile>
+    <innerfile refid="_puzzle_room_8h">PuzzleRoom.h</innerfile>
+    <innerfile refid="_regular_room_8cpp">RegularRoom.cpp</innerfile>
+    <innerfile refid="_regular_room_8h">RegularRoom.h</innerfile>
+    <innerfile refid="_room_8h">Room.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/"/>
+  </compounddef>
+</doxygen>

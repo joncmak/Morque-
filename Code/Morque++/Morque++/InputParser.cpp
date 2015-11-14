@@ -4,14 +4,30 @@
 #define DOOR 1
 #define FILENAME "savefile"
 
+///
+/// getClassName
+///
+/// Gathers user input for a class name. Validates classroom name.
+/// If invalid, return empty string
+///
+/// Returns: name of the class to create.
+///
 std::string InputParser::getClassName()
 {
 	std::string classname = "";
 	std::cout << "enter classname" << std::endl;
 	std::cin >> classname;
-	return (classname == "RegularRoom" || classname == "PuzzleRoom" || "TrapRoom") ? classname: "";
+	return (classname == "RegularRoom" || classname == "PuzzleRoom" || classname == "TrapRoom") ? classname: "";
 }
 
+///
+/// getAdjList()
+///
+/// Gather user input for an adjacency list.
+/// Specifies which sides of the room are walls/doors.
+///
+/// Returns: integer array for adjacency list
+///
 int* InputParser::getAdjList()
 {
 	int inAdjList = 0;
@@ -29,6 +45,14 @@ int* InputParser::getAdjList()
 	return adjList;
 }
 
+///
+/// getID()
+///
+/// Generates a uuid and casts to string.
+/// Uses Boost::uuid library
+///
+/// Return: uuid string
+///
 std::string InputParser::genID()
 {
 	boost::uuids::uuid uuid = boost::uuids::random_generator()();
@@ -36,6 +60,13 @@ std::string InputParser::genID()
 	return stringID;
 }
 
+///
+/// loadSaveFile()
+///
+/// If a save file is present, it loads the instance from savefile.
+/// Currently only returns uuid for the instance.
+/// Uses Boost library for serialization.
+///
 void InputParser::loadSaveFile()
 {
 	RegularRoom* room;
@@ -47,6 +78,14 @@ void InputParser::loadSaveFile()
 	room->print();
 }
 
+///
+/// getCommand()
+///
+/// Gathers user input and parses commands.
+/// Valid actons are create, print, and quit.
+/// After creating an instance, it will prompt to save.
+/// todo store multiple instances, print will print info on all instances
+///
 void InputParser::getCommand()
 {
 	MapPrototypeFactory* factory = NULL;

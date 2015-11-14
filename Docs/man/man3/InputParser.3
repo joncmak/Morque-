@@ -1,0 +1,39 @@
+.TH "InputParser" 3 "Sat Nov 14 2015" "Orque" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+InputParser \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <InputParser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgetCommand\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadSaveFile\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Input Command Parser
+.PP
+Parses user input\&. Gathers user input using cin\&. Auto-generates uuid for insteance IDs\&. Loads \fBRoom\fP instance if savefile is present\&. Requires Boost C++ Library 
+.SH "Member Function Documentation"
+.PP 
+.SS "void InputParser::getCommand ()"
+\fBgetCommand()\fP
+.PP
+Gathers user input and parses commands\&. Valid actons are create, print, and quit\&. After creating an instance, it will prompt to save\&. todo store multiple instances, print will print info on all instances 
+.SS "void InputParser::loadSaveFile ()"
+\fBloadSaveFile()\fP
+.PP
+If a save file is present, it loads the instance from savefile\&. Currently only returns uuid for the instance\&. Uses Boost library for serialization\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Orque from the source code\&.

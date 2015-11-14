@@ -5,6 +5,13 @@
 
 using namespace std;
 
+///
+/// Constructor for RegularRoom
+///
+/// Parameters:
+/// string pID - uuid for instance of RegularRoom
+/// int* pAdjacencyList - integer array for adjacency list
+///
 RegularRoom::RegularRoom(string pID, int* pAdjacencyList) : Room()
 {
 	mID = pID;
@@ -14,6 +21,12 @@ RegularRoom::RegularRoom(string pID, int* pAdjacencyList) : Room()
 	cout << "created Regular Room " << mID << endl;
 }
 
+///
+/// Copy Constructor for RegularRoom
+///
+/// Parameters:
+/// RegularRoom& pRegularRoom - instance of RegularRoom to copy
+///
 RegularRoom::RegularRoom(const RegularRoom& pRegularRoom) : Room(pRegularRoom)
 {
 	mID = pRegularRoom.mID;
@@ -22,6 +35,15 @@ RegularRoom::RegularRoom(const RegularRoom& pRegularRoom) : Room(pRegularRoom)
 	cout << "copied Regular Room " << mID << endl;
 }
 
+///
+/// setAdjacencyList
+///
+/// Sets the adjacency list for RegularRoom.
+/// If a valud in the integer array is invalid, it defaults to 0 (WALL)
+///
+/// Parameters:
+/// int* pAdjacencyList - integer array to use for adjacency list
+///
 void RegularRoom::setAdjacencyList(int* pAdjacencyList)
 {
 	if(sizeof(pAdjacencyList) != 4)
@@ -50,11 +72,23 @@ void RegularRoom::setAdjacencyList(int* pAdjacencyList)
 	}
 }
 
+///
+/// clone()
+///
+/// clone function for RegularRoom
+///
+/// Returns: cloned instance of RegularRoom
+///
 Room* RegularRoom::clone()
 {
 	return new RegularRoom(*this);
 }
 
+///
+/// print()
+///
+/// Prints information about the current instance of RegularRoom
+///
 void RegularRoom::print()
 {
 	// print instance info

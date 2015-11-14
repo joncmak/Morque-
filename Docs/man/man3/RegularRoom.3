@@ -1,0 +1,69 @@
+.TH "RegularRoom" 3 "Sat Nov 14 2015" "Orque" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RegularRoom \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RegularRoom\&.h>\fP
+.PP
+Inherits \fBRoom\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRegularRoom\fP (std::string, int *)"
+.br
+.ti -1c
+.RI "\fBRegularRoom\fP (const \fBRegularRoom\fP &)"
+.br
+.ti -1c
+.RI "\fBRoom\fP * \fBclone\fP ()"
+.br
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBprintAdjList\fP ()"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBboost::serialization::access\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Basic Regular \fBRoom\fP class
+.PP
+Uses \fBRoom()\fP Base Class Requires Boost C++ Library 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RegularRoom::RegularRoom (const \fBRegularRoom\fP & pRegularRoom)"
+Copy Constructor for \fBRegularRoom\fP
+.PP
+Parameters: \fBRegularRoom\fP& pRegularRoom - instance of \fBRegularRoom\fP to copy 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBRoom\fP * RegularRoom::clone ()\fC [virtual]\fP"
+\fBclone()\fP
+.PP
+clone function for \fBRegularRoom\fP
+.PP
+Returns: cloned instance of \fBRegularRoom\fP 
+.PP
+Implements \fBRoom\fP\&.
+.SS "void RegularRoom::print ()\fC [virtual]\fP"
+\fBprint()\fP
+.PP
+Prints information about the current instance of \fBRegularRoom\fP 
+.PP
+Implements \fBRoom\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Orque from the source code\&.

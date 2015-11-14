@@ -1,0 +1,53 @@
+.TH "MapPrototypeFactory" 3 "Sat Nov 14 2015" "Orque" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MapPrototypeFactory \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MapPrototypeFactory\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMapPrototypeFactory\fP ()"
+.br
+.ti -1c
+.RI "\fBMapPrototypeFactory\fP (\fBRoom\fP *)"
+.br
+.ti -1c
+.RI "virtual \fBRoom\fP * \fBmakeRoom\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBRoom\fP * \fBgetRoom\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Prototype Factory
+.PP
+Creates and clones instances of \fBRoom\fP and all subclasses 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MapPrototypeFactory::MapPrototypeFactory ()"
+Default Constructor 
+.SS "MapPrototypeFactory::MapPrototypeFactory (\fBRoom\fP * pRoom)"
+Constructor
+.PP
+Parameters: Room* pRoom - \fBRoom\fP prototype to use in factory 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBRoom\fP * MapPrototypeFactory::getRoom ()\fC [virtual]\fP"
+getRoom
+.PP
+returns: Current instance of \fBRoom\fP 
+.SS "\fBRoom\fP * MapPrototypeFactory::makeRoom ()\fC [virtual]\fP"
+makeRoom
+.PP
+returns: Instance clone of \fBRoom\fP 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Orque from the source code\&.

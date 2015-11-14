@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_map_prototype_factory_8cpp" kind="file" language="C++">
+    <compoundname>MapPrototypeFactory.cpp</compoundname>
+    <includes refid="_map_prototype_factory_8h" local="yes">MapPrototypeFactory.h</includes>
+    <incdepgraph>
+      <node id="45">
+        <label>MapPrototypeFactory.h</label>
+        <link refid="_map_prototype_factory_8h_source"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>PuzzleRoom.h</label>
+        <link refid="_puzzle_room_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>boost/serialization/utility.hpp</label>
+      </node>
+      <node id="47">
+        <label>string</label>
+      </node>
+      <node id="46">
+        <label>map</label>
+      </node>
+      <node id="44">
+        <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/MapPrototypeFactory.cpp</label>
+        <link refid="MapPrototypeFactory.cpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>boost/serialization/base_object.hpp</label>
+      </node>
+      <node id="48">
+        <label>Room.h</label>
+        <link refid="_room_8h_source"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>boost/serialization/assume_abstract.hpp</label>
+      </node>
+      <node id="54">
+        <label>iostream</label>
+      </node>
+      <node id="51">
+        <label>boost/serialization/list.hpp</label>
+      </node>
+      <node id="53">
+        <label>RegularRoom.h</label>
+        <link refid="_regular_room_8h_source"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;MapPrototypeFactory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_map_prototype_factory_1a97fdee5474741037a0c458b56ba13f27" kindref="member">MapPrototypeFactory::MapPrototypeFactory</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="class_map_prototype_factory_1a97fdee5474741037a0c458b56ba13f27" kindref="member">MapPrototypeFactory::MapPrototypeFactory</ref>(<ref refid="class_room" kindref="compound">Room</ref>*<sp/>pRoom)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>mPrototypeRoom<sp/>=<sp/>pRoom;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">MapPrototypeFactory::~MapPrototypeFactory()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref>*<sp/><ref refid="class_map_prototype_factory_1a15aa625ae73c2dac279e9ed1c9106303" kindref="member">MapPrototypeFactory::makeRoom</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mPrototypeRoom-&gt;clone();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref>*<sp/><ref refid="class_map_prototype_factory_1a06b4bef4dcbbc14eaddcde41e712b15b" kindref="member">MapPrototypeFactory::getRoom</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mPrototypeRoom;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/MapPrototypeFactory.cpp"/>
+  </compounddef>
+</doxygen>

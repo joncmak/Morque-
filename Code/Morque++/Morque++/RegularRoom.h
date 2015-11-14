@@ -4,11 +4,21 @@
 #include <iostream>
 #include <string>
 
+///
+/// Basic Regular Room class
+/// 
+/// Uses Room() Base Class
+/// Requires Boost C++ Library
+///
 class RegularRoom : 
 	public Room
 {
 public:
+
+	// Default Constructor
 	RegularRoom() : mID("0"), mAdjacencyList(0){}
+
+	// Copy Constructor
 	RegularRoom(std::string, int*);
 	RegularRoom(const RegularRoom&);
 	~RegularRoom() {};
@@ -24,6 +34,7 @@ private:
 	int* mAdjacencyList;
 	void setAdjacencyList(int*);
 
+	// Boost::Serialization
 	template<class Archive>
     void serialize(Archive &ar, const unsigned int version)
     {
