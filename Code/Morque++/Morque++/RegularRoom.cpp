@@ -5,7 +5,7 @@
 
 using namespace std;
 
-RegularRoom::RegularRoom(int pID, int* pAdjacencyList) : Room()
+RegularRoom::RegularRoom(string pID, int* pAdjacencyList) : Room()
 {
 	mID = pID;
 	mAdjacencyList = new int[4];
@@ -15,7 +15,7 @@ RegularRoom::RegularRoom(int pID, int* pAdjacencyList) : Room()
 
 RegularRoom::RegularRoom(const RegularRoom& pRegularRoom) : Room(pRegularRoom)
 {
-	mID = pRegularRoom.mID + 1;
+	mID = pRegularRoom.mID;
 	mAdjacencyList = pRegularRoom.mAdjacencyList;
 	cout << "copied Regular Room " << mID << endl;
 }

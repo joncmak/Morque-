@@ -5,7 +5,7 @@
 
 using namespace std;
 
-PuzzleRoom::PuzzleRoom(int pID, int* pAdjacencyList) : Room()
+PuzzleRoom::PuzzleRoom(string pID, int* pAdjacencyList) : Room()
 {
 	mID = pID;
 	mAdjacencyList = new int[4];
@@ -15,7 +15,7 @@ PuzzleRoom::PuzzleRoom(int pID, int* pAdjacencyList) : Room()
 
 PuzzleRoom::PuzzleRoom(const PuzzleRoom& pPuzzleRoom) : Room(pPuzzleRoom)
 {
-	mID = pPuzzleRoom.mID + 1;
+	mID = pPuzzleRoom.mID;
 	mAdjacencyList = pPuzzleRoom.mAdjacencyList;
 	cout << "copied Puzzle Room " << mID << endl;
 }

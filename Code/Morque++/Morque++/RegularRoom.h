@@ -6,7 +6,7 @@
 class RegularRoom : public Room
 {
 public:
-	RegularRoom(int, int*);
+	RegularRoom(std::string, int*);
 	RegularRoom(const RegularRoom&);
 	~RegularRoom() {};
 
@@ -14,7 +14,7 @@ public:
 	void print();
 
 private:
-	int mID;
+	std::string mID;
 	int* mAdjacencyList;
 	void setAdjacencyList(int*);
 };

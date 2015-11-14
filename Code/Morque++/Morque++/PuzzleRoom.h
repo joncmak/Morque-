@@ -7,14 +7,14 @@ class PuzzleRoom :
 	public Room
 {
 public:
-	PuzzleRoom(int, int*);
+	PuzzleRoom(std::string, int*);
 	PuzzleRoom(const PuzzleRoom&);
 	~PuzzleRoom(void) {};
 
 	Room* clone();
 	void print();
 private:
-	int mID;
+	std::string mID;
 	int* mAdjacencyList;
 	void setAdjacencyList(int*);
 };
