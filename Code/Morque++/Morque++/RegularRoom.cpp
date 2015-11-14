@@ -10,6 +10,7 @@ RegularRoom::RegularRoom(string pID, int* pAdjacencyList) : Room()
 	mID = pID;
 	mAdjacencyList = new int[4];
 	setAdjacencyList(pAdjacencyList);
+
 	cout << "created Regular Room " << mID << endl;
 }
 
@@ -17,6 +18,7 @@ RegularRoom::RegularRoom(const RegularRoom& pRegularRoom) : Room(pRegularRoom)
 {
 	mID = pRegularRoom.mID;
 	mAdjacencyList = pRegularRoom.mAdjacencyList;
+
 	cout << "copied Regular Room " << mID << endl;
 }
 
@@ -56,11 +58,15 @@ Room* RegularRoom::clone()
 void RegularRoom::print()
 {
 	// print instance info
-	cout << "created Regular Room " << mID << endl;
-	cout << "adjacency list: [";
-	for(int index = 0; index < 4; index++)
+	cout << "created Regular Room: " << mID << endl;
+
+	if(mAdjacencyList)
 	{
-		cout << mAdjacencyList[index] << ", ";
+		cout << "adjacency list: [";
+		for(int index = 0; index < 4; index++)
+		{
+			cout << mAdjacencyList[index] << ", ";
+		}
+		cout << "]" << endl;
 	}
-	cout << "]" << endl;
 }

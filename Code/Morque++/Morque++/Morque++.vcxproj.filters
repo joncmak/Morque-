@@ -27,7 +27,7 @@
     <ClInclude Include="PuzzleRoom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Orque.h">
+    <ClInclude Include="InputParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -45,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="maintest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

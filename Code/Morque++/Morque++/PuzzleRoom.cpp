@@ -10,6 +10,7 @@ PuzzleRoom::PuzzleRoom(string pID, int* pAdjacencyList) : Room()
 	mID = pID;
 	mAdjacencyList = new int[4];
 	setAdjacencyList(pAdjacencyList);
+
 	cout << "created Puzzle Room " << mID << endl;
 }
 
@@ -17,6 +18,7 @@ PuzzleRoom::PuzzleRoom(const PuzzleRoom& pPuzzleRoom) : Room(pPuzzleRoom)
 {
 	mID = pPuzzleRoom.mID;
 	mAdjacencyList = pPuzzleRoom.mAdjacencyList;
+
 	cout << "copied Puzzle Room " << mID << endl;
 }
 
@@ -62,4 +64,3 @@ void PuzzleRoom::print()
 	}
 	cout << "]" << endl;
 }
-
