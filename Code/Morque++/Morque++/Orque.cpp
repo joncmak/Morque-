@@ -4,7 +4,10 @@ int main()
 {
 	InputParser* input = new InputParser();
 
-	input->loadSaveFile();
+	if(std::ifstream("savefile-RegularRoom") || std::ifstream("savefile-PuzzleRoom"))
+	{
+		input->loadSaveFile();
+	}
 	//Get input
 	input->getCommand();
 

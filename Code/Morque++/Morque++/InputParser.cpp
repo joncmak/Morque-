@@ -17,7 +17,7 @@ std::string InputParser::getClassName()
 	std::string classname = "";
 	std::cout << "enter classname" << std::endl;
 	std::cin >> classname;
-	return (classname == "RegularRoom" || classname == "PuzzleRoom" || classname == "TrapRoom") ? classname: "";
+	return (classname == "RegularRoom" || classname == "PuzzleRoom") ? classname: "";
 }
 
 ///
@@ -69,22 +69,37 @@ std::string InputParser::genID()
 ///
 void InputParser::loadSaveFile()
 {
-	RegularRoom* room;
-	std::ifstream ifs(FILENAME);
-	boost::archive::text_iarchive ar(ifs);
-	ar & room;
+	std::string filename = FILENAME;
+	if(std::ifstream(filename + "-RegularRoom"))
+	{
+		RegularRoom* room;
+		std::ifstream ifs(filename + "-RegularRoom");
+		boost::archive::text_iarchive ar(ifs);
+		ar & room;
 
-	cout << "loaded successfully" << endl;
-	room->print();
+		cout << "loaded successfully" << endl;
+		mInstanceMap.insert(std::make_pair(room->getID(), room));
+	}
+	
+	if(std::ifstream(filename + "-PuzzleRoom"))
+	{
+		PuzzleRoom* room;
+		std::ifstream ifs(filename + "-PuzzleRoom");
+		boost::archive::text_iarchive ar(ifs);
+		ar & room;
+
+		cout << "loaded successfully" << endl;
+		mInstanceMap.insert(std::make_pair(room->getID(), room));
+	}
+	
 }
 
 ///
 /// getCommand()
 ///
 /// Gathers user input and parses commands.
-/// Valid actons are create, print, and quit.
+/// Valid actons are create, print, delete, and quit.
 /// After creating an instance, it will prompt to save.
-/// todo store multiple instances, print will print info on all instances
 ///
 void InputParser::getCommand()
 {
@@ -94,7 +109,7 @@ void InputParser::getCommand()
 	{
 		std::string action;
 		
-		std::cout << "enter command [create|print|quit]" << std::endl;
+		std::cout << "enter command [create|print|delete|quit]" << std::endl;
 		std::cin >> action;
 		
 		if(action == "quit")
@@ -104,12 +119,13 @@ void InputParser::getCommand()
 		else if (action == "create")
 		{
 			std::string classname = getClassName();
-			int* adjList = getAdjList();
+			int adjList[4] = {0,0,0,0};
 
 			if(classname == "RegularRoom")
 			{
 				RegularRoom* room = new RegularRoom(genID(), adjList);
 				factory = new MapPrototypeFactory(room);
+				mInstanceMap.insert(std::make_pair(room->getID(), room));
 
 				std::string save = "";
 				cout << "save? (y|n)" << endl;
@@ -117,7 +133,8 @@ void InputParser::getCommand()
 
 				if(save == "y")
 				{
-					std::ofstream ofs(FILENAME);
+					std::string filename = FILENAME;
+					std::ofstream ofs(filename += "-RegularRoom");
 					boost::archive::text_oarchive ar(ofs);
 					ar & room;
 				}
@@ -126,6 +143,7 @@ void InputParser::getCommand()
 			{
 				PuzzleRoom* room = new PuzzleRoom(genID(), adjList);
 				factory = new MapPrototypeFactory(room);
+				mInstanceMap.insert(std::make_pair(room->getID(), room));
 
 				std::string save = "";
 				cout << "save? (y|n)" << endl;
@@ -133,7 +151,8 @@ void InputParser::getCommand()
 
 				if(save == "y")
 				{
-					std::ofstream ofs(FILENAME);
+					std::string filename = FILENAME;
+					std::ofstream ofs(filename += "-PuzzleRoom");
 					boost::archive::text_oarchive ar(ofs);
 					ar & room;
 				}
@@ -145,15 +164,32 @@ void InputParser::getCommand()
 		}
 		else if (action == "print")
 		{
-			if(NULL == factory)
+			if(mInstanceMap.empty())
 			{
 				std::cout << "no instance" << std::endl;
 			}
 			else
 			{
 				//todo print all
-				Room* room = factory->getRoom();
-				room->print();
+				std::map<std::string, Room*>::iterator iter = mInstanceMap.begin();
+				while (iter != mInstanceMap.end())
+				{
+					Room* room = iter->second;
+					room->print();
+
+					iter++;
+				}
+			}
+		}
+		else if (action == "delete")
+		{
+			if(mInstanceMap.empty())
+			{
+				std::cout << "no instance" << std::endl;
+			}
+			else
+			{
+				mInstanceMap.clear();
 			}
 		}
 		else

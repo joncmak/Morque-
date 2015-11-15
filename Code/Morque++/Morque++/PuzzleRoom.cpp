@@ -14,9 +14,19 @@ using namespace std;
 ///
 PuzzleRoom::PuzzleRoom(string pID, int* pAdjacencyList) : Room()
 {
+	if(pID == "")
+	{
+		boost::uuids::uuid uuid = boost::uuids::random_generator()();
+		pID = boost::lexical_cast<std::string>(uuid);
+	}
+
 	mID = pID;
-	mAdjacencyList = new int[4];
-	setAdjacencyList(pAdjacencyList);
+
+	if(pAdjacencyList != NULL)
+	{
+		mAdjacencyList = new int[4];
+		setAdjacencyList(pAdjacencyList);
+	}
 
 	cout << "created Puzzle Room " << mID << endl;
 }
@@ -66,6 +76,7 @@ void PuzzleRoom::setAdjacencyList(int* pAdjacencyList)
 			else
 			{
 				//error log
+				mAdjacencyList[index] = WALL;
 			}
 		}
 	}
@@ -91,10 +102,10 @@ Room* PuzzleRoom::clone()
 void PuzzleRoom::print()
 {
 	cout << "created Puzzle Room " << mID << endl;
-	cout << "adjacency list: [";
-	for(int index = 0; index < 4; index++)
-	{
-		cout << mAdjacencyList[index] << ", ";
-	}
-	cout << "]" << endl;
+//	cout << "adjacency list: [";
+//	for(int index = 0; index < 4; index++)
+//	{
+//		cout << mAdjacencyList[index] << ", ";
+//	}
+//	cout << "]" << endl;
 }

@@ -14,9 +14,19 @@ using namespace std;
 ///
 RegularRoom::RegularRoom(string pID, int* pAdjacencyList) : Room()
 {
+	if(pID == "")
+	{
+		boost::uuids::uuid uuid = boost::uuids::random_generator()();
+		pID = boost::lexical_cast<std::string>(uuid);
+	}
+
 	mID = pID;
-	mAdjacencyList = new int[4];
-	setAdjacencyList(pAdjacencyList);
+	
+	if(pAdjacencyList != NULL)
+	{
+		mAdjacencyList = new int[4];
+		setAdjacencyList(pAdjacencyList);
+	}
 
 	cout << "created Regular Room " << mID << endl;
 }
@@ -66,7 +76,7 @@ void RegularRoom::setAdjacencyList(int* pAdjacencyList)
 			else
 			{
 				//error log
-				mAdjacencyList[index] = -1;
+				mAdjacencyList[index] = WALL;
 			}
 		}
 	}
@@ -94,13 +104,10 @@ void RegularRoom::print()
 	// print instance info
 	cout << "created Regular Room: " << mID << endl;
 
-	if(mAdjacencyList)
-	{
-		cout << "adjacency list: [";
-		for(int index = 0; index < 4; index++)
-		{
-			cout << mAdjacencyList[index] << ", ";
-		}
-		cout << "]" << endl;
-	}
+//	cout << "adjacency list: [";
+//	for(int index = 0; index < 4; index++)
+//	{
+//		cout << mAdjacencyList[index] << ", ";
+//	}
+//	cout << "]" << endl;
 }

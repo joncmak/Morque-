@@ -2,10 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <boost/uuid/uuid.hpp>
-#include <boost/uuid/uuid_generators.hpp>
-#include <boost/uuid/uuid_io.hpp>
-#include <boost/lexical_cast/lexical_cast_old.hpp>
+#include <map>
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/text_iarchive.hpp>
 
@@ -19,6 +16,7 @@
 /// Loads Room instance if savefile is present.
 /// Requires Boost C++ Library
 ///
+
 class InputParser
 {
 public:
@@ -31,5 +29,7 @@ private:
 	std::string getClassName();
 	int* getAdjList();
 	std::string genID();
+
+	std::map<std::string, Room*> mInstanceMap; 
 };
 

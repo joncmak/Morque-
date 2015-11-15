@@ -26,6 +26,15 @@ public:
 	Room* clone();
 	void print();
 	std::string printAdjList();
+	std::string getID()
+	{
+		return mID;
+	}
+
+	int* getAdjacencyList()
+	{
+		return mAdjacencyList;
+	}
 
 private:
 	friend class boost::serialization::access;
@@ -38,7 +47,6 @@ private:
 	template<class Archive>
     void serialize(Archive &ar, const unsigned int version)
     {
-        //ar & boost::serialization::base_object<Room>(*this);
         ar & mID;
     }
 };
