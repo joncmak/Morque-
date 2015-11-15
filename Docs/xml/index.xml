@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
   <compound refid="class_input_parser" kind="class"><name>InputParser</name>
+    <member refid="class_input_parser_1ad27860c48ee432eb860fb9e23adc48b5" kind="variable"><name>mInstanceMap</name></member>
     <member refid="class_input_parser_1a9e2e24cbf89184dd4fa72a74fb89773a" kind="function"><name>InputParser</name></member>
     <member refid="class_input_parser_1a75fe4bac3901a5165eaef2f4acb1704b" kind="function"><name>~InputParser</name></member>
     <member refid="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" kind="function"><name>getCommand</name></member>
@@ -28,6 +29,8 @@
     <member refid="class_puzzle_room_1accc75d111244cea434a271cfce0f8dc3" kind="function"><name>clone</name></member>
     <member refid="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" kind="function"><name>print</name></member>
     <member refid="class_puzzle_room_1a49f9d91d939430e4530973c1b6d6be81" kind="function"><name>printAdjList</name></member>
+    <member refid="class_puzzle_room_1a282305a4fdc5e8c6af641ac120896368" kind="function"><name>getID</name></member>
+    <member refid="class_puzzle_room_1af699d0cca8c6cba363ad676a8c85af4f" kind="function"><name>getAdjacencyList</name></member>
     <member refid="class_puzzle_room_1ab7e08aa77ceaf00cbdc82b7448c5e31e" kind="function"><name>setAdjacencyList</name></member>
     <member refid="class_puzzle_room_1a09d5f4742e4ddbb0518ef2b7eb944e8b" kind="function"><name>serialize</name></member>
   </compound>
@@ -42,6 +45,8 @@
     <member refid="class_regular_room_1ae3483699210ed1ca929ed35630891a7a" kind="function"><name>clone</name></member>
     <member refid="class_regular_room_1a9ed67a6945a7ba51af64ff351904174e" kind="function"><name>print</name></member>
     <member refid="class_regular_room_1a8250146f0e1f694c0e96f8dd654408ac" kind="function"><name>printAdjList</name></member>
+    <member refid="class_regular_room_1adc8a08543142c2c2a5529e437624e376" kind="function"><name>getID</name></member>
+    <member refid="class_regular_room_1ae2dc08db388097fe0ef139b7ac8579bf" kind="function"><name>getAdjacencyList</name></member>
     <member refid="class_regular_room_1a231aa092d5161d1f894dc9cd646cef3e" kind="function"><name>setAdjacencyList</name></member>
     <member refid="class_regular_room_1aed7300ede438e5ffd752751c30780b23" kind="function"><name>serialize</name></member>
   </compound>
@@ -66,7 +71,18 @@
   </compound>
   <compound refid="maintest_8cpp" kind="file"><name>maintest.cpp</name>
     <member refid="maintest_8cpp_1ab340a5e76af466a5f20ec5500d30a80b" kind="define"><name>BOOST_TEST_MAIN</name></member>
-    <member refid="maintest_8cpp_1a33e4ec96d5a5d9adea1b246e4b0b72f4" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a5223bf6821cf0b2377f47e2246f557ee" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1aecac2a322d53f928a695293728809c4f" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a4c2678553297f15b012264413b65bc26" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a9180bcc25c6b319967c60e0c699ce849" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a706788a5d569a62ebf33ff737b35d5ad" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1af3a1e7e3050fd5a89646b9d370bee35b" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a1e0f21c6a45e999a452f73a409f866ba" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a19a93497c5e089c18e167ea8db5ec3e0" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a6b078c60862e8ec356458a4aa696d5b7" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a9807c9e75fe21f2fb80837ea2b265f2b" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1ae795115ed0ba27823078745ae3dd0392" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
+    <member refid="maintest_8cpp_1a762a0989d4d9c5a1a5b8cf9f9fc4ff37" kind="function"><name>BOOST_AUTO_TEST_CASE</name></member>
   </compound>
   <compound refid="_map_prototype_factory_8cpp" kind="file"><name>MapPrototypeFactory.cpp</name>
   </compound>

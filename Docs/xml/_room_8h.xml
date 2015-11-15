@@ -7,71 +7,95 @@
     <includes local="no">boost/serialization/utility.hpp</includes>
     <includes local="no">boost/serialization/list.hpp</includes>
     <includes local="no">boost/serialization/assume_abstract.hpp</includes>
+    <includes local="no">boost/uuid/uuid.hpp</includes>
+    <includes local="no">boost/uuid/uuid_generators.hpp</includes>
+    <includes local="no">boost/uuid/uuid_io.hpp</includes>
+    <includes local="no">boost/lexical_cast/lexical_cast_old.hpp</includes>
     <includedby refid="_map_prototype_factory_8h" local="yes">C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/MapPrototypeFactory.h</includedby>
     <includedby refid="_regular_room_8h" local="yes">C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h</includedby>
     <includedby refid="_puzzle_room_8h" local="yes">C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h</includedby>
     <incdepgraph>
-      <node id="136">
+      <node id="178">
+        <label>boost/uuid/uuid_io.hpp</label>
+      </node>
+      <node id="173">
         <label>boost/serialization/utility.hpp</label>
       </node>
-      <node id="134">
+      <node id="171">
         <label>string</label>
       </node>
-      <node id="135">
+      <node id="172">
         <label>boost/serialization/base_object.hpp</label>
       </node>
-      <node id="133">
+      <node id="179">
+        <label>boost/lexical_cast/lexical_cast_old.hpp</label>
+      </node>
+      <node id="170">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h</label>
         <link refid="Room.h"/>
-        <childnode refid="134" relation="include">
+        <childnode refid="171" relation="include">
         </childnode>
-        <childnode refid="135" relation="include">
+        <childnode refid="172" relation="include">
         </childnode>
-        <childnode refid="136" relation="include">
+        <childnode refid="173" relation="include">
         </childnode>
-        <childnode refid="137" relation="include">
+        <childnode refid="174" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
         </childnode>
       </node>
-      <node id="138">
+      <node id="177">
+        <label>boost/uuid/uuid_generators.hpp</label>
+      </node>
+      <node id="175">
         <label>boost/serialization/assume_abstract.hpp</label>
       </node>
-      <node id="137">
+      <node id="174">
         <label>boost/serialization/list.hpp</label>
+      </node>
+      <node id="176">
+        <label>boost/uuid/uuid.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="140">
+      <node id="181">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/MapPrototypeFactory.h</label>
         <link refid="_map_prototype_factory_8h_source"/>
-        <childnode refid="141" relation="include">
+        <childnode refid="182" relation="include">
         </childnode>
       </node>
-      <node id="143">
+      <node id="184">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h</label>
         <link refid="_puzzle_room_8h_source"/>
-        <childnode refid="140" relation="include">
+        <childnode refid="181" relation="include">
         </childnode>
       </node>
-      <node id="139">
+      <node id="180">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h</label>
         <link refid="Room.h"/>
-        <childnode refid="140" relation="include">
+        <childnode refid="181" relation="include">
         </childnode>
-        <childnode refid="142" relation="include">
+        <childnode refid="183" relation="include">
         </childnode>
-        <childnode refid="143" relation="include">
+        <childnode refid="184" relation="include">
         </childnode>
       </node>
-      <node id="141">
+      <node id="182">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.h</label>
         <link refid="_input_parser_8h_source"/>
       </node>
-      <node id="142">
+      <node id="183">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h</label>
         <link refid="_regular_room_8h_source"/>
-        <childnode refid="140" relation="include">
+        <childnode refid="181" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -87,28 +111,32 @@
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/serialization/utility.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/serialization/list.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/serialization/assume_abstract.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="class_room" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref></highlight></codeline>
-<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::serialization::access;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>mID;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>mAdjacencyList;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boost::Serialization</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version)</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/>mID;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room" kindref="compound">Room</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_room" kindref="compound">Room</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_room" kindref="compound">Room</ref>*<sp/>clone()=0;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print()=0;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid_generators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid_io.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lexical_cast/lexical_cast_old.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_room" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">boost::serialization::access;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>mID;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>mAdjacencyList;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boost::Serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Archive&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>serialize(Archive<sp/>&amp;ar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ar<sp/>&amp;<sp/>mID;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_room" kindref="compound">Room</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_room" kindref="compound">Room</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_room" kindref="compound">Room</ref>*<sp/>clone()=0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print()=0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h"/>
   </compounddef>

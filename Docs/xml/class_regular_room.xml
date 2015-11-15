@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="31" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="40" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="33" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="42" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_regular_room_1afd838eb5915be95edf00da29fd2d613e" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="34" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="34" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="43" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
 <para>Copy Constructor for <ref refid="class_regular_room" kindref="compound">RegularRoom</ref></para><para>Parameters: <ref refid="class_regular_room" kindref="compound">RegularRoom</ref>&amp; pRegularRoom - instance of <ref refid="class_regular_room" kindref="compound">RegularRoom</ref> to copy </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="23" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="30" bodyend="36"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="23" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="40" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_regular_room_1aca211ba93998c889a9b5770a185e5f9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -122,7 +122,7 @@
 <para><ref refid="class_regular_room_1ae3483699210ed1ca929ed35630891a7a" kindref="member">clone()</ref></para><para>clone function for <ref refid="class_regular_room" kindref="compound">RegularRoom</ref></para><para>Returns: cloned instance of <ref refid="class_regular_room" kindref="compound">RegularRoom</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="82" bodyend="85"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="92" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_regular_room_1a9ed67a6945a7ba51af64ff351904174e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -136,7 +136,7 @@
 <para><ref refid="class_regular_room_1a9ed67a6945a7ba51af64ff351904174e" kindref="member">print()</ref></para><para>Prints information about the current instance of <ref refid="class_regular_room" kindref="compound">RegularRoom</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="27" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="92" bodyend="106"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="27" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="102" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_regular_room_1a8250146f0e1f694c0e96f8dd654408ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -150,6 +150,32 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regular_room_1adc8a08543142c2c2a5529e437624e376" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string RegularRoom::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="29" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_regular_room_1ae2dc08db388097fe0ef139b7ac8579bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* RegularRoom::getAdjacencyList</definition>
+        <argsstring>()</argsstring>
+        <name>getAdjacencyList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="34" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="34" bodyend="37"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -168,7 +194,7 @@
 <para>setAdjacencyList</para><para>Sets the adjacency list for <ref refid="class_regular_room" kindref="compound">RegularRoom</ref>. If a valud in the integer array is invalid, it defaults to 0 (WALL)</para><para>Parameters: int* pAdjacencyList - integer array to use for adjacency list </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="35" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="47" bodyend="73"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="44" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.cpp" bodystart="57" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_regular_room_1aed7300ede438e5ffd752751c30780b23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -194,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="39" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="39" bodyend="43"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="48" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="48" bodyend="51"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -225,10 +251,12 @@
         <link refid="class_room"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="15" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="13" bodyend="44"/>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" line="15" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/RegularRoom.h" bodystart="13" bodyend="52"/>
     <listofallmembers>
       <member refid="class_regular_room_1ac98d07dd8f7b70e16ccb9a01abf56b9c" prot="public" virt="non-virtual"><scope>RegularRoom</scope><name>boost::serialization::access</name></member>
       <member refid="class_regular_room_1ae3483699210ed1ca929ed35630891a7a" prot="public" virt="virtual"><scope>RegularRoom</scope><name>clone</name></member>
+      <member refid="class_regular_room_1ae2dc08db388097fe0ef139b7ac8579bf" prot="public" virt="non-virtual"><scope>RegularRoom</scope><name>getAdjacencyList</name></member>
+      <member refid="class_regular_room_1adc8a08543142c2c2a5529e437624e376" prot="public" virt="non-virtual"><scope>RegularRoom</scope><name>getID</name></member>
       <member refid="class_regular_room_1afd838eb5915be95edf00da29fd2d613e" prot="private" virt="non-virtual"><scope>RegularRoom</scope><name>mAdjacencyList</name></member>
       <member refid="class_regular_room_1a0d196ae4b46ae732b8dab5dc5d564778" prot="private" virt="non-virtual"><scope>RegularRoom</scope><name>mID</name></member>
       <member refid="class_regular_room_1a9ed67a6945a7ba51af64ff351904174e" prot="public" virt="virtual"><scope>RegularRoom</scope><name>print</name></member>

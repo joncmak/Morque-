@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="29" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="38" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="31" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="40" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_puzzle_room_1a268488ce66e49a82303f3ce7420ff2ff" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="32" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="41" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
 <para>Copy Constructor for <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref></para><para>Parameters: <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>&amp; pPuzzleRoom - instance of <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref> to copy </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="22" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="30" bodyend="36"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="22" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="40" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_puzzle_room_1a5aa94843d6946d55a815f91fd5ff70d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -125,7 +125,7 @@
 <para><ref refid="class_puzzle_room_1accc75d111244cea434a271cfce0f8dc3" kindref="member">clone()</ref></para><para>clone function for <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref></para><para>Returns: cloned instance of <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="25" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="81" bodyend="84"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="25" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="92" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -139,7 +139,7 @@
 <para><ref refid="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" kindref="member">print()</ref></para><para>Prints information about the current instance of <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="91" bodyend="100"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="102" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="class_puzzle_room_1a49f9d91d939430e4530973c1b6d6be81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -153,6 +153,32 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_puzzle_room_1a282305a4fdc5e8c6af641ac120896368" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string PuzzleRoom::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="28" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_puzzle_room_1af699d0cca8c6cba363ad676a8c85af4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* PuzzleRoom::getAdjacencyList</definition>
+        <argsstring>()</argsstring>
+        <name>getAdjacencyList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="33" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="33" bodyend="36"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -171,7 +197,7 @@
 <para>setAdjacencyList</para><para>Sets the adjacency list for <ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>. If a valud in the integer array is invalid, it defaults to 0 (WALL)</para><para>Parameters: int* pAdjacencyList - integer array to use for adjacency list </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="33" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="47" bodyend="72"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="42" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp" bodystart="57" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="class_puzzle_room_1a09d5f4742e4ddbb0518ef2b7eb944e8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -197,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="37" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="37" bodyend="41"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="46" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="46" bodyend="49"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -228,10 +254,12 @@
         <link refid="class_room"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="15" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="13" bodyend="42"/>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" line="15" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.h" bodystart="13" bodyend="50"/>
     <listofallmembers>
       <member refid="class_puzzle_room_1ac98d07dd8f7b70e16ccb9a01abf56b9c" prot="public" virt="non-virtual"><scope>PuzzleRoom</scope><name>boost::serialization::access</name></member>
       <member refid="class_puzzle_room_1accc75d111244cea434a271cfce0f8dc3" prot="public" virt="virtual"><scope>PuzzleRoom</scope><name>clone</name></member>
+      <member refid="class_puzzle_room_1af699d0cca8c6cba363ad676a8c85af4f" prot="public" virt="non-virtual"><scope>PuzzleRoom</scope><name>getAdjacencyList</name></member>
+      <member refid="class_puzzle_room_1a282305a4fdc5e8c6af641ac120896368" prot="public" virt="non-virtual"><scope>PuzzleRoom</scope><name>getID</name></member>
       <member refid="class_puzzle_room_1a268488ce66e49a82303f3ce7420ff2ff" prot="private" virt="non-virtual"><scope>PuzzleRoom</scope><name>mAdjacencyList</name></member>
       <member refid="class_puzzle_room_1a4e0307b82cb5335eed85810e6c9e474e" prot="private" virt="non-virtual"><scope>PuzzleRoom</scope><name>mID</name></member>
       <member refid="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" prot="public" virt="virtual"><scope>PuzzleRoom</scope><name>print</name></member>

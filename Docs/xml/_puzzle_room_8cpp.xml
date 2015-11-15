@@ -4,53 +4,73 @@
     <compoundname>PuzzleRoom.cpp</compoundname>
     <includes refid="_puzzle_room_8h" local="yes">PuzzleRoom.h</includes>
     <incdepgraph>
-      <node id="92">
+      <node id="113">
         <label>PuzzleRoom.h</label>
         <link refid="_puzzle_room_8h_source"/>
-        <childnode refid="93" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="122">
+        <label>boost/uuid/uuid_io.hpp</label>
+      </node>
+      <node id="117">
         <label>boost/serialization/utility.hpp</label>
       </node>
-      <node id="94">
+      <node id="115">
         <label>string</label>
       </node>
-      <node id="95">
+      <node id="116">
         <label>boost/serialization/base_object.hpp</label>
       </node>
-      <node id="93">
+      <node id="123">
+        <label>boost/lexical_cast/lexical_cast_old.hpp</label>
+      </node>
+      <node id="114">
         <label>Room.h</label>
         <link refid="_room_8h_source"/>
-        <childnode refid="94" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="98" relation="include">
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="121">
+        <label>boost/uuid/uuid_generators.hpp</label>
+      </node>
+      <node id="119">
         <label>boost/serialization/assume_abstract.hpp</label>
       </node>
-      <node id="99">
+      <node id="124">
         <label>iostream</label>
       </node>
-      <node id="97">
+      <node id="118">
         <label>boost/serialization/list.hpp</label>
       </node>
-      <node id="91">
+      <node id="112">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp</label>
         <link refid="PuzzleRoom.cpp"/>
-        <childnode refid="92" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
+      </node>
+      <node id="120">
+        <label>boost/uuid/uuid.hpp</label>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -91,63 +111,74 @@
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">PuzzleRoom::PuzzleRoom(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pAdjacencyList)<sp/>:<sp/><ref refid="class_room" kindref="compound">Room</ref>()</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>mID<sp/>=<sp/>pID;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>mAdjacencyList<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[4];</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>setAdjacencyList(pAdjacencyList);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;created<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">PuzzleRoom::PuzzleRoom(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>&amp;<sp/>pPuzzleRoom)<sp/>:<sp/><ref refid="class_room" kindref="compound">Room</ref>(pPuzzleRoom)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>mID<sp/>=<sp/>pPuzzleRoom.mID;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>mAdjacencyList<sp/>=<sp/>pPuzzleRoom.mAdjacencyList;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;copied<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PuzzleRoom::setAdjacencyList(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pAdjacencyList)</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pAdjacencyList)<sp/>!=<sp/>4)</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error<sp/>log</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pAdjacencyList[index]<sp/>==<sp/>WALL)</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList[index]<sp/>=<sp/>WALL;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pAdjacencyList[index]<sp/>==<sp/>DOOR)</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList[index]<sp/>=<sp/>DOOR;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error<sp/>log</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref>*<sp/><ref refid="class_puzzle_room_1accc75d111244cea434a271cfce0f8dc3" kindref="member">PuzzleRoom::clone</ref>()</highlight></codeline>
-<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" kindref="member">PuzzleRoom::print</ref>()</highlight></codeline>
-<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;created<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;adjacency<sp/>list:<sp/>[&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>mAdjacencyList[index]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pID<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boost::uuids::uuid<sp/>uuid<sp/>=<sp/>boost::uuids::random_generator()();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pID<sp/>=<sp/>boost::lexical_cast&lt;std::string&gt;(uuid);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>mID<sp/>=<sp/>pID;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pAdjacencyList<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[4];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setAdjacencyList(pAdjacencyList);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;created<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">PuzzleRoom::PuzzleRoom(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>&amp;<sp/>pPuzzleRoom)<sp/>:<sp/><ref refid="class_room" kindref="compound">Room</ref>(pPuzzleRoom)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>mID<sp/>=<sp/>pPuzzleRoom.mID;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>mAdjacencyList<sp/>=<sp/>pPuzzleRoom.mAdjacencyList;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;copied<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PuzzleRoom::setAdjacencyList(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>pAdjacencyList)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pAdjacencyList)<sp/>!=<sp/>4)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error<sp/>log</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pAdjacencyList[index]<sp/>==<sp/>WALL)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList[index]<sp/>=<sp/>WALL;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pAdjacencyList[index]<sp/>==<sp/>DOOR)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList[index]<sp/>=<sp/>DOOR;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error<sp/>log</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAdjacencyList[index]<sp/>=<sp/>WALL;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="class_room" kindref="compound">Room</ref>*<sp/><ref refid="class_puzzle_room_1accc75d111244cea434a271cfce0f8dc3" kindref="member">PuzzleRoom::clone</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room_1a37f747c996ffe44f33fe433884809607" kindref="member">PuzzleRoom::print</ref>()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;created<sp/>Puzzle<sp/>Room<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>mID<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;adjacency<sp/>list:<sp/>[&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>for(int<sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>mAdjacencyList[index]<sp/>&lt;&lt;<sp/>&quot;,<sp/>&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;]&quot;<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/PuzzleRoom.cpp"/>
   </compounddef>

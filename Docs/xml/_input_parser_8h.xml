@@ -5,71 +5,76 @@
     <includes local="no">iostream</includes>
     <includes local="no">fstream</includes>
     <includes local="no">string</includes>
-    <includes local="no">boost/uuid/uuid.hpp</includes>
-    <includes local="no">boost/uuid/uuid_generators.hpp</includes>
-    <includes local="no">boost/uuid/uuid_io.hpp</includes>
-    <includes local="no">boost/lexical_cast/lexical_cast_old.hpp</includes>
+    <includes local="no">map</includes>
     <includes local="no">boost/archive/text_oarchive.hpp</includes>
     <includes local="no">boost/archive/text_iarchive.hpp</includes>
     <includes refid="_map_prototype_factory_8h" local="yes">MapPrototypeFactory.h</includes>
     <includedby refid="_input_parser_8cpp" local="yes">C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/InputParser.cpp</includedby>
     <includedby refid="_orque_8cpp" local="yes">C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Orque.cpp</includedby>
     <incdepgraph>
-      <node id="31">
+      <node id="28">
         <label>MapPrototypeFactory.h</label>
         <link refid="_map_prototype_factory_8h_source"/>
-        <childnode refid="32" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="27">
         <label>boost/archive/text_iarchive.hpp</label>
       </node>
       <node id="39">
         <label>PuzzleRoom.h</label>
         <link refid="_puzzle_room_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="36">
         <label>boost/uuid/uuid_io.hpp</label>
       </node>
-      <node id="35">
+      <node id="31">
         <label>boost/serialization/utility.hpp</label>
       </node>
       <node id="24">
         <label>string</label>
       </node>
-      <node id="32">
+      <node id="25">
         <label>map</label>
       </node>
       <node id="23">
         <label>fstream</label>
       </node>
-      <node id="34">
+      <node id="30">
         <label>boost/serialization/base_object.hpp</label>
       </node>
-      <node id="29">
+      <node id="26">
         <label>boost/archive/text_oarchive.hpp</label>
       </node>
-      <node id="28">
+      <node id="37">
         <label>boost/lexical_cast/lexical_cast_old.hpp</label>
       </node>
-      <node id="33">
+      <node id="29">
         <label>Room.h</label>
         <link refid="_room_8h_source"/>
         <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
@@ -80,16 +85,16 @@
         <childnode refid="37" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="35">
         <label>boost/uuid/uuid_generators.hpp</label>
       </node>
-      <node id="37">
+      <node id="33">
         <label>boost/serialization/assume_abstract.hpp</label>
       </node>
       <node id="22">
         <label>iostream</label>
       </node>
-      <node id="36">
+      <node id="32">
         <label>boost/serialization/list.hpp</label>
       </node>
       <node id="21">
@@ -109,20 +114,14 @@
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
       </node>
-      <node id="25">
+      <node id="34">
         <label>boost/uuid/uuid.hpp</label>
       </node>
       <node id="38">
         <label>RegularRoom.h</label>
         <link refid="_regular_room_8h_source"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
@@ -140,27 +139,27 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid_generators.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/uuid/uuid_io.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/lexical_cast/lexical_cast_old.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/archive/text_oarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/archive/text_iarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MapPrototypeFactory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="class_input_parser" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_input_parser" kindref="compound">InputParser</ref></highlight></codeline>
-<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_parser" kindref="compound">InputParser</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_input_parser" kindref="compound">InputParser</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" kindref="member">getCommand</ref>();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_parser_1af7a64c3eeac796698f5e9028d11087e6" kindref="member">loadSaveFile</ref>();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>getClassName();</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>getAdjList();</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>genID();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/archive/text_oarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/archive/text_iarchive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MapPrototypeFactory.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_input_parser" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_input_parser" kindref="compound">InputParser</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_input_parser" kindref="compound">InputParser</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_input_parser" kindref="compound">InputParser</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_parser_1a249c8bd5eb2e28dca2adfb3de8b66437" kindref="member">getCommand</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_input_parser_1af7a64c3eeac796698f5e9028d11087e6" kindref="member">loadSaveFile</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>getClassName();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>getAdjList();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>genID();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>Room*&gt;<sp/>mInstanceMap;<sp/></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
     </programlisting>

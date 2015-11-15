@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="16" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="20" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="18" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="22" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_room_1aac144c2be3d501cb0c24857ca16bf628" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="19" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="23" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="23" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="23" bodyend="26"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="27" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="27" bodyend="30"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="29" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="29" bodyend="29"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="33" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="33" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_room_1a67d5da09983cc53097807fd43ba5481a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="30" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="30" bodyend="30"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="34" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="class_room_1aa5637f9ee72d93244c0dc239e4576755" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="class_room" kindref="compound">Room</ref> *</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="31" column="1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="35" column="1"/>
       </memberdef>
       <memberdef kind="function" id="class_room_1a5ca5f7a60280ed61a2d3813de97460f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="32" column="1"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="36" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -156,7 +156,7 @@
         <link refid="class_room"/>
       </node>
     </inheritancegraph>
-    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="15" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="14" bodyend="33"/>
+    <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" line="19" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/Room.h" bodystart="18" bodyend="37"/>
     <listofallmembers>
       <member refid="class_room_1ac98d07dd8f7b70e16ccb9a01abf56b9c" prot="public" virt="non-virtual"><scope>Room</scope><name>boost::serialization::access</name></member>
       <member refid="class_room_1aa5637f9ee72d93244c0dc239e4576755" prot="public" virt="pure-virtual"><scope>Room</scope><name>clone</name></member>

@@ -3,14 +3,95 @@
   <compounddef id="maintest_8cpp" kind="file" language="C++">
     <compoundname>maintest.cpp</compoundname>
     <includes local="no">boost/test/unit_test.hpp</includes>
+    <includes refid="_regular_room_8h" local="yes">RegularRoom.h</includes>
+    <includes refid="_puzzle_room_8h" local="yes">PuzzleRoom.h</includes>
+    <includes local="no">string</includes>
     <incdepgraph>
+      <node id="55">
+        <label>PuzzleRoom.h</label>
+        <link refid="_puzzle_room_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
       <node id="42">
         <label>boost/test/unit_test.hpp</label>
+      </node>
+      <node id="52">
+        <label>boost/uuid/uuid_io.hpp</label>
+      </node>
+      <node id="47">
+        <label>boost/serialization/utility.hpp</label>
+      </node>
+      <node id="45">
+        <label>string</label>
+      </node>
+      <node id="46">
+        <label>boost/serialization/base_object.hpp</label>
+      </node>
+      <node id="53">
+        <label>boost/lexical_cast/lexical_cast_old.hpp</label>
+      </node>
+      <node id="44">
+        <label>Room.h</label>
+        <link refid="_room_8h_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>boost/uuid/uuid_generators.hpp</label>
+      </node>
+      <node id="49">
+        <label>boost/serialization/assume_abstract.hpp</label>
+      </node>
+      <node id="54">
+        <label>iostream</label>
+      </node>
+      <node id="48">
+        <label>boost/serialization/list.hpp</label>
+      </node>
+      <node id="50">
+        <label>boost/uuid/uuid.hpp</label>
+      </node>
+      <node id="43">
+        <label>RegularRoom.h</label>
+        <link refid="_regular_room_8h_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
       </node>
       <node id="41">
         <label>C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp</label>
         <link refid="maintest.cpp"/>
         <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -27,13 +108,29 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="maintest_8cpp_1a33e4ec96d5a5d9adea1b246e4b0b72f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="maintest_8cpp_1a5223bf6821cf0b2377f47e2246f557ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>BOOST_AUTO_TEST_CASE</definition>
-        <argsstring>(test1)</argsstring>
+        <argsstring>(RegularRoomDefaultConstructor)</argsstring>
         <name>BOOST_AUTO_TEST_CASE</name>
         <param>
-          <type>test1</type>
+          <type>RegularRoomDefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regular <ref refid="class_room" kindref="compound">Room</ref> Unit Tests </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="10" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1aecac2a322d53f928a695293728809c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(RegularRoomConstructor)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>RegularRoomConstructor</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -41,7 +138,167 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="4" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="4" bodyend="7"/>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="18" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a4c2678553297f15b012264413b65bc26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(RegularRoomConstructorNoID)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>RegularRoomConstructorNoID</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="26" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a9180bcc25c6b319967c60e0c699ce849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(RegularRoomClone)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>RegularRoomClone</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="34" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a706788a5d569a62ebf33ff737b35d5ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(RegularRoomConstructorIntList)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>RegularRoomConstructorIntList</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="43" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1af3a1e7e3050fd5a89646b9d370bee35b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(RegularRoomConstructorIntListInvalid)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>RegularRoomConstructorIntListInvalid</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="57" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="57" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a1e0f21c6a45e999a452f73a409f866ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomDefaultConstructor)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomDefaultConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Puzzle <ref refid="class_room" kindref="compound">Room</ref> Unit Tests </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="76" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a19a93497c5e089c18e167ea8db5ec3e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomConstructor)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomConstructor</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="84" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a6b078c60862e8ec356458a4aa696d5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomConstructorNoID)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomConstructorNoID</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="92" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a9807c9e75fe21f2fb80837ea2b265f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomClone)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomClone</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="100" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1ae795115ed0ba27823078745ae3dd0392" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomConstructorIntList)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomConstructorIntList</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="109" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="109" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="maintest_8cpp_1a762a0989d4d9c5a1a5b8cf9f9fc4ff37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOOST_AUTO_TEST_CASE</definition>
+        <argsstring>(PuzzleRoomConstructorIntListInvalid)</argsstring>
+        <name>BOOST_AUTO_TEST_CASE</name>
+        <param>
+          <type>PuzzleRoomConstructorIntListInvalid</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" line="124" column="1" bodyfile="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp" bodystart="124" bodyend="138"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -51,11 +308,136 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#define<sp/>BOOST_TEST_MAIN</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/test/unit_test.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal">BOOST_AUTO_TEST_CASE(test1)</highlight></codeline>
-<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_REQUIRE(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RegularRoom.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;PuzzleRoom.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomDefaultConstructor)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomConstructor)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>(</highlight><highlight class="stringliteral">&quot;TestID&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(</highlight><highlight class="stringliteral">&quot;TestID&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomConstructorNoID)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomClone)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>(</highlight><highlight class="stringliteral">&quot;TestID<sp/>Copy&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>copy<sp/>=<sp/>room;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room,<sp/>copy);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomConstructorIntList)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>list[4]<sp/>=<sp/>{0,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>list);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room-&gt;getAdjacencyList()[index],<sp/>list[index]);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">BOOST_AUTO_TEST_CASE(RegularRoomConstructorIntListInvalid)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>list[4]<sp/>=<sp/>{2,<sp/>3,<sp/>4,<sp/>5};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_regular_room" kindref="compound">RegularRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>list);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expectedResult[4]<sp/>=<sp/>{0,0,0,0};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room-&gt;getAdjacencyList()[index],<sp/>expectedResult[index]);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomDefaultConstructor)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomConstructor)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(</highlight><highlight class="stringliteral">&quot;TestID&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(</highlight><highlight class="stringliteral">&quot;TestID&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomConstructorNoID)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomClone)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(</highlight><highlight class="stringliteral">&quot;TestID<sp/>Copy&quot;</highlight><highlight class="normal">,<sp/>NULL);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>copy<sp/>=<sp/>room;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room,<sp/>copy);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomConstructorIntList)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>list[4]<sp/>=<sp/>{0,<sp/>0,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>list);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room-&gt;getAdjacencyList()[index],<sp/>list[index]);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">BOOST_AUTO_TEST_CASE(PuzzleRoomConstructorIntListInvalid)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>list[4]<sp/>=<sp/>{2,<sp/>3,<sp/>4,<sp/>5};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>*<sp/>room<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_puzzle_room" kindref="compound">PuzzleRoom</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>list);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>room-&gt;getID();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOST_CHECK(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expectedResult[4]<sp/>=<sp/>{0,0,0,0};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/>4;<sp/>index++)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOOST_CHECK_EQUAL(room-&gt;getAdjacencyList()[index],<sp/>expectedResult[index]);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Jonathan/Documents/GitHub/Morque-/Code/Morque++/Morque++/maintest.cpp"/>
   </compounddef>
